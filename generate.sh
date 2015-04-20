@@ -14,7 +14,7 @@ __rvm_md5_for()
 
 email=$1
 hash="$(__rvm_md5_for $email)"
-safe_email=${email//[^\.0-9a-zA-Z]/-}
+safe_email=${email//[^\.0-9a-zA-Z]/-}.xml
 #echo $email
 #echo $safe_email
 #echo $hash
